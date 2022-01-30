@@ -332,8 +332,13 @@ a {
 }
 .recent-projects__cards {
   display: flex;
-  gap: 6vw;
-  justify-content: center;
+  gap:10vw;
+  justify-content: space-evenly;
+}
+@media(max-width:750px){
+  .recent-projects__cards{
+  flex-direction:column;
+  }
 }
 .rp-card {
   box-shadow: 3px 4px 20px rgba(0, 0, 0, 0.13);
